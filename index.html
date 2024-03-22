@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Quiz</title>
+</head>
+
+<body>
+        <div class="container">
+                 
+                  <div class="title">
+                      <img src="./gif-tittle.gif" class="img-fluid" alt="..." width="450" height="200">
+                   </div>
+                    <br>
+                     <hr>
+
+ 
+           <div class="container">
+            <div class="row align-items-start">
+
+                <div class="itemSelect">
+                    <select name="trivia_category" id="trivia_category" class="form-select" fdprocessedid="3pwa4">
+                        <option value="any">Any Category</option>
+                        <option value="9">General Knowledge</option>
+                        <option value="10">Entertainment: Books</option>
+                        <option value="11">Entertainment: Film</option>
+                        <option value="12">Entertainment: Music</option>
+                        <option value="13">Entertainment: Musicals &amp; Theatres</option>
+                        <option value="14">Entertainment: Television</option>
+                        <option value="15">Entertainment: Video Games</option>
+                        <option value="16">Entertainment: Board Games</option>
+                        <option value="17">Science &amp; Nature</option>
+                        <option value="18">Science: Computers</option>
+                        <option value="19">Science: Mathematics</option>
+                        <option value="20">Mythology</option>
+                        <option value="21">Sports</option>
+                        <option value="22">Geography</option>
+                        <option value="23">History</option>
+                        <option value="24">Politics</option>
+                        <option value="25">Art</option>
+                        <option value="26">Celebrities</option>
+                        <option value="27">Animals</option>
+                        <option value="28">Vehicles</option>
+                        <option value="29">Entertainment: Comics</option>
+                        <option value="30">Science: Gadgets</option>
+                        <option value="31">Entertainment: Japanese Anime &amp; Manga</option>
+                        <option value="32">Entertainment: Cartoon &amp; Animations</option>
+                    </select>
+                    <br>
+
+
+
+                    <select name="trivia_difficulty" id="trivia_difficulty" class="form-select" fdprocessedid="ufika8">
+                        <option value="any">Any Difficulty</option>
+                        <option value="easy">Easy</option>
+                        <option value="medium">Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                    <br>
+
+                    <select name="trivia_type" id="trivia_type" class="form-select" fdprocessedid="1h7t16">&gt;
+                        <option value="any">Any Type</option>
+                        <option value="multiple">Multiple Choice</option>
+                        <option value="boolean">True / False</option>
+                    </select>
+                    <br>
+                </div>
+
+
+       
+
+
+
+
+                <!--START BTN -->
+                <div class="btnStart">
+                    <button type="button" class="btn-iniciar btn btn-success">START</button>
+                </div><br>
+                
+
+                  <!--RESET BTN -->
+                  <div class="btnReset">
+                    <button type="button" class="btn-reset btn btn-danger">RESET</button>
+                </div>
+
+
+            </div><br>
+
+            <!--Questions -->
+            <div class="containerQz" id="container_quiz">
+
+            </div>
+
+
+            <div class="container" id="result">
+                <div class="row">
+                    <div class="col d-flex justify-content-center">
+                        <button type="button" class="btn-validar btn btn-primary">Score</button>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col d-flex justify-content-center">
+                        <label class="puntos" id="puntos"></label>
+                    </div>
+                </div>
+            </div>
+
+
+         
+
+           
+             
+
+
+
+
+  
+
+        </div>
+
+
+  
+
+           
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>      
+   <script src="./main.js"></script>
+</body>
+
+</html>
